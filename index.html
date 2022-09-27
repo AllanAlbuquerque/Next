@@ -16,18 +16,39 @@
 
 <body>
   <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" onclick="navigateTo('./views/inicio/inicio.html')"><img class="nav_logo" src="./img/logo.svg" alt="logo"></a>
+    <a class="navbar-brand" onclick="navigateTo('./views/inicio/inicio.html')"><img class="nav_logo"
+        src="./img/logo.svg" alt="logo"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
       aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse nav_menu" id="navMenu">
       <ul class="d-flex gap-4">
-        <li class="d-flex justify-content-center p-2 rounded-pill"><a id="homeBtn" class="active-link" onclick="navigateTo('./views/inicio/inicio.html', this)">Início</a></li>
-        <li class="d-flex justify-content-center p-2 rounded-pill"><a onclick="navigateTo('./views/manual/manual.html', this)">Manual</a></li>
-        <li class="d-flex justify-content-center p-2 rounded-pill"><a onclick="navigateTo('./views/teste/teste.html', this)">Teste Online</a></li>
-        <li class="d-flex justify-content-center p-2 rounded-pill"><a onclick="navigateTo('./views/certificado/certificado.html', this)">Certificado</a></li>
-        <li class="d-flex justify-content-center p-2 rounded-pill"><a onclick="navigateTo('./views/forum/forum.html', this)">Fórum</a></li>
+        <li class="d-flex justify-content-center p-2 rounded-pill"><a id="homeBtn" class="active-link dyn-font"
+            onclick="navigateTo('./views/inicio/inicio.html', this)">Início</a></li>
+        <li class="d-flex justify-content-center p-2 rounded-pill"><a
+            onclick="navigateTo('./views/manual/manual.html', this)">Manual</a></li>
+        <li class="d-flex justify-content-center p-2 rounded-pill"><a
+            onclick="navigateTo('./views/teste/teste.html', this)">Teste Online</a></li>
+        <li class="d-flex justify-content-center p-2 rounded-pill"><a
+            onclick="navigateTo('./views/certificado/certificado.html', this)">Certificado</a></li>
+        <li class="d-flex justify-content-center p-2 rounded-pill"><a
+            onclick="navigateTo('./views/forum/forum.html', this)">Fórum</a></li>
+
+        <li class="d-flex justify-content-center p-2 rounded-pill">
+          <div class="d-flex align-items-center acessibilidade">
+            <div class="font me-4 text-white">
+              <a href="#" class="dyn-font" onclick="increaseFont()">A+</a> | <a href="#" class="dyn-font"
+                onclick="decreaseFont()">A-</a>
+            </div>
+            <a href="#" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()" class="d-flex
+              align-items-center contraste text-white dyn-font">
+              <img src="./img/contraste.png" class="me-2">
+              Alto contraste [Alt + 3]
+            </a>
+          </div>
+        </li>
+
       </ul>
     </div>
   </nav>
@@ -45,7 +66,13 @@
 
   <script src="./main.js"></script>
 
-  <div vw class="enabled">
+  <div vw class="enabled ">
+    <div>
+      <a href="#" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()" class="d-flex
+              align-items-center justify-content-center p-2 contraste text-white dyn-font border rounded">
+              <img src="./img/contraste.png" class="me-2">
+            </a>
+    </div>
     <div vw-access-button class="active"></div>
     <div vw-plugin-wrapper>
       <div class="vw-plugin-top-wrapper"></div>
