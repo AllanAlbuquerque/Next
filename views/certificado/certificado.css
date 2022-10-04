@@ -1,11 +1,11 @@
-.obtenhaCertificado{
+.obtenhaCertificado {
     max-width: 1640px;
     width: 100%;
     margin-top: 7%;
     margin-bottom: 7%;
 }
 
-.content-certificado{
+.content-certificado {
     max-width: 1640px;
     width: 100%;
     height: 1000px;
@@ -95,20 +95,40 @@
     color: #000000;
 }
 
-.boneco{
+.boneco {
     position: relative;
     left: 300px;
     bottom: -10px;
 }
 
-.bilhete{
-    width: 1640px;
+.bilhete {
+    max-width: 1640px;
+    width: 100%;
     margin: auto;
     left: 410px;
     top: 100px;
 }
-.bilhete img{
+
+.bilhete img {
     position: relative;
     left: 410px;
     top: 100px;
+}
+
+@media only screen and (max-width: 988px) {
+    .content-certificado, .describ, .top {
+        height: auto;
+    }
+
+    .img-certificado  {
+        margin-bottom: 100px;
+    }
+
+    .bilhete{
+        display: none;
+    }
+
+    .bilhete img {
+        left: 300px;
+    }
 }
