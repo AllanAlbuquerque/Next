@@ -1,1 +1,147 @@
-<h1 class="title text-degrade">Teste Online</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="teste.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <!-- <a class="navbar-brand" onclick="navigateTo('./inicio/inicio.html')" -->
+    ><img class="nav_logo" src="../../img/logo.svg" alt="logo" /></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+      aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse nav_menu" id="navMenu">
+      <ul class="d-flex gap-4">
+        <li class="d-flex justify-content-center p-2 rounded-pill">
+          <!-- <a
+              id="homeBtn"
+              class="active-link dyn-font"
+              onclick="navigateTo('../inicio/inicio.html', this)"
+              >Início</a
+            > -->
+        </li>
+        <li class="d-flex justify-content-center p-2 rounded-pill">
+          <a onclick="navigateTo('./views/manual/manual.html', this)">Manual</a>
+        </li>
+        <li class="d-flex justify-content-center p-2 rounded-pill">
+          <a onclick="navigateTo('./views/teste/teste.html', this)">Teste Online</a>
+        </li>
+        <li class="d-flex justify-content-center p-2 rounded-pill">
+          <a onclick="navigateTo('./views/certificado/certificado.html', this)">Certificado</a>
+        </li>
+        <li class="d-flex justify-content-center p-2 rounded-pill">
+          <a onclick="navigateTo('./views/forum/forum.html', this)">Fórum</a>
+        </li>
+
+        <li class="d-flex justify-content-center p-2 rounded-pill">
+          <div class="d-flex align-items-center acessibilidade">
+            <div class="font me-4 text-white">
+              <a href="#" class="dyn-font" onclick="increaseFont()">A+</a> |
+              <a href="#" class="dyn-font" onclick="decreaseFont()">A-</a>
+            </div>
+            <a href="#" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()"
+              class="d-flex align-items-center contraste text-white dyn-font">
+              <img src="../../img/contraste.png" class="me-2" />
+              Alto contraste [Alt + 3]
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="app" class="container-fluid">
+
+    <section class="container">
+      <div class="content">
+        <div class="content_text">
+          <h1>Teste Online:</h1>
+          <h2>Acessível ou não?</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sequi
+            beatae, veritatis fugit atque architecto a amet corporis accusantium
+            facilis sapiente illo <strong>animi! Cum esse</strong> corrupti
+            provident doloribus fugiat.
+          </p>
+        </div>
+        <div class="image">
+          <img src="../../img/bilhete.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="content-form">
+        <h2>Formulário para avaliação de Acessibilidade WEB</h2>
+
+        <form action="" method="post">
+          <div class="contato-info">
+            <input type="text" name="name" class="input" placeholder="Primeiro nome*" required />
+            <input type="text" name="text" class="input" placeholder="sobrenome*" required />
+          </div>
+
+          <div class="contato-info">
+            <input type="email" name="email" class="input" placeholder="E-mail" required />
+            <input type="tel" name="tel" class="input" placeholder="Celular" required />
+          </div>
+
+          <div class="contato-info">
+            <input type="text" name="link" class="input" placeholder="Link do site*" required />
+            <label for="arquivo" class="upload"><img src="../../img/upload.svg" alt=""> Upload Arquivo</label>
+            <input type="file" name="arquivo" id="arquivo">
+          </div>
+
+          <div class="contato-info">
+            <textarea class="input" placeholder="Alguma observacão?" name="message" rows="5" cols="50"
+              required></textarea>
+          </div>
+          <div class="contato-info">
+            <input class="btn" type="submit" value="Enviar">
+          </div>
+
+        </form>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="rodape bg-blue d-flex flex-column justify-content-center align-items-center p-4">
+    <p>accessibility.co | Todos os direitos reservados ©</p>
+  </footer>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+  <script src="../../main.js"></script>
+
+  <div vw class="enabled">
+    <div>
+      <a href="#" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()"
+        class="d-flex align-items-center justify-content-center p-2 contraste text-white dyn-font border rounded">
+        <img src="../../img/contraste.png" class="me-2" />
+      </a>
+    </div>
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app')
+  </script>
+</body>
+
+</html>
