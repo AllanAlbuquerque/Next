@@ -1,170 +1,168 @@
+.introduction-text {
+  width: 70%;
+}
+
 .obtenhaCertificado {
-    max-width: 1640px;
-    width: 100%;
-    margin-top: 7%;
-    margin-bottom: 7%;
+  max-width: 1640px;
+  width: 100%;
+  margin-top: 7%;
+  margin-bottom: 7%;
 }
 
 .content-certificado {
-    max-width: 1640px;
-    width: 100%;
-    height: auto;
+  max-width: 1640px;
+  width: 100%;
+  height: auto;
 }
 
 .perfil {
-    width: 533px;
-    max-width: 100%;
-    background: rgba(246, 246, 246, 0.9);
-    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.15);
-    height: 1000px;
+  width: 533px;
+  max-width: 100%;
+  background: rgba(246, 246, 246, 0.9);
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.15);
+  height: 1000px;
 }
 
 .perfil .phone img {
-    width: 221px;
-    height: 213.21px;
+  width: 221px;
+  height: 213.21px;
 }
 
 .filtrar {
-    font-family: 'Hind';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 140.6%;
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 140.6%;
 }
 
 .filtrar li {
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 140.6%;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 140.6%;
 }
 
 .filtrar input {
-    all: unset;
-    width: 40px;
-    height: 40px;
-    border: 1px solid black;
-    display: inline-block;
+  all: unset;
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  display: inline-block;
 }
-
-
 
 .filtrar input:checked {
-    background-color: black !important;
+  background-color: black !important;
 }
 
-.exibiOrdem{
-    max-width: 1640px;
-    width: 100%;
-    height: auto;
+.exibiOrdem {
+  max-width: 1640px;
+  width: 100%;
+  height: auto;
 }
 
 .exibiOrdem div {
-    width: 388px;
-    height: 50px;
+  width: 388px;
+  height: 50px;
 
-    float: right;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    background: rgba(246, 246, 246, 0.9);
-/* shadow */
+  float: right;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  background: rgba(246, 246, 246, 0.9);
+  /* shadow */
 
-box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.15);
-border-radius: 10px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
 }
 
 .describ {
-    width: 1066px;
-    max-width: 100%;
-    background: rgba(246, 246, 246, 0.9);
-    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.15);
+  width: 1066px;
+  max-width: 100%;
+  background: rgba(246, 246, 246, 0.9);
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.15);
 }
 
 .comment {
-    height: 340px;
-
+  height: 340px;
 }
 
 .border_bottom {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .describ img {
-    width: 100px;
-    height: 100px;
-}
-
-.title {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 34px;
-    line-height: 41px;
-    color: #000000;
+  width: 100px;
+  height: 100px;
 }
 
 .perfil p,
 .describ p {
-    font-family: 'Hind';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 140.6%;
-    color: #000000;
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 140.6%;
+  color: #000000;
 }
 
 .describ input {
-    width: 100%;
-    height: 84px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-shadow: inset 0 1px 3px #ddd;
-    border-radius: 4px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+  width: 100%;
+  height: 84px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .describ button {
-    width: 243px;
-    height: 57px;
+  width: 243px;
+  height: 57px;
 
-    /* degrade botao */
+  /* degrade botao */
 
-    background: linear-gradient(180deg, rgba(50, 55, 174, 0.88) 0%, rgba(23, 26, 108, 0.9) 100%);
-    box-shadow: 8px 8px 73px rgba(158, 162, 255, 0.25);
-    border-radius: 50px;
-    color: #FFFFFF;
-    border: none;
+  background: linear-gradient(180deg, rgba(50, 55, 174, 0.88) 0%, rgba(23, 26, 108, 0.9) 100%);
+  box-shadow: 8px 8px 73px rgba(158, 162, 255, 0.25);
+  border-radius: 50px;
+  color: #ffffff;
+  border: none;
 }
 
 .perfil ol li {
-    font-family: 'Hind';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 166.6%;
-    color: #000000;
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 166.6%;
+  color: #000000;
 }
 
 .credencial {
-    font-family: 'Hind';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 140.6%;
-    color: #000000;
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 140.6%;
+  color: #000000;
 }
 
 .boneco {
-    position: relative;
-    left: 300px;
-    bottom: -10px;
+  position: relative;
+  left: 300px;
+  bottom: -10px;
+}
+
+@media only screen and (max-width: 988px) {
+  .introduction-text {
+    width: 100%;
+  }
 }

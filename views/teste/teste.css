@@ -1,194 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind&family=Montserrat:wght@500;700&display=swap');
-
-* {
-  font-family: 'Montserrat', 'Hind';
-}
-
-body {
-  background: linear-gradient(180deg, rgba(177, 189, 212, 0.9) 0%, rgba(242, 242, 242, 0.7) 100%);
-}
-
-/* Paleta de cores */
-:root {
-  --color-blue: #3237ae;
-  --color-brown: #5e5015;
-  --color-yellow: #c9b255;
-  --color-white: #ffffff;
-  --color-black: #000000;
-}
-
-.bg-blue {
-  color: var(--color-white);
-  background: linear-gradient(180deg, rgba(50, 54, 174, 0.88) 0%, rgba(23, 26, 108, 0.9) 100%);
-}
-
-.text-degrade {
-  background: -webkit-linear-gradient(90deg, rgba(50, 55, 174, 0.9) 0%, rgba(23, 26, 108, 0.94) 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* NAV */
-.navbar-brand,
-.nav_menu a {
-  cursor: pointer;
-}
-
-.navbar {
-  margin: 1% 7% 4% 7%;
-}
-
-.nav_menu ul {
-  list-style: none;
-  margin: 0;
-}
-
-.nav_menu a {
-  white-space: nowrap;
-  margin: 0 1rem 0 1rem;
-  font-weight: 700;
-  text-decoration: none;
-  color: var(--color-black);
-}
-
-li:has(> a.active-link) {
-  background-color: #3c3c3c;
-}
-
-.nav_menu .active-link {
-  color: var(--color-white);
-}
-
-.default-section {
-  display: flex;
-  margin: 7%;
-}
-
-/* UTILS */
-.title {
-  color: var(--color-black);
-  font-size: 4rem;
-  font-weight: 700;
-}
-
-.text {
-  color: var(--color-black);
-  font-size: 1.5rem;
-}
-
-/* Acima de 993px */
-@media screen and (min-width: 993px) {
-  .nav_menu {
-    justify-content: end;
-  }
-}
-
-/* Abaixo de 993px */
-@media screen and (max-width: 992px) {
-  .nav_menu ul {
-    margin: 1rem;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .nav_menu li {
-    width: 15%;
-  }
-}
-
-/* Abaixo de 1000 */
-@media screen and (max-width: 1000px) {
-  .default-section {
-    flex-direction: column;
-    margin: 10% 1%;
-  }
-
-  .title {
-    font-size: 2.5rem;
-  }
-
-  .text {
-    font-size: 1rem;
-  }
-}
-
-/* CORES EM ALTO CONTRASTE */
-.contrast,
-.contrast nav,
-.contrast div,
-.contrast li,
-.contrast ol,
-.contrast header,
-.contrast footer,
-.contrast section,
-.contrast main,
-.contrast aside,
-.contrast article {
-  background: #000 !important;
-  color: #fff !important;
-}
-
-.contrast section {
-  border: 1px solid #fff;
-}
-
-.contrast {
-  padding: 1rem;
-}
-
-.contrast h1,
-.contrast h2,
-.contrast h3,
-.contrast h4,
-.contrast h5,
-.contrast h6,
-.contrast p,
-.contrast label,
-.contrast strong,
-.contrast em,
-.contrast cite,
-.contrast q,
-.contrast i,
-.contrast b,
-.contrast u,
-.contrast span {
-  color: #fff !important;
-}
-
-.contrast .text-degrade {
-  background: -webkit-linear-gradient(90deg, var(--color-yellow) 0%, var(--color-brown) 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .container {
   width: 80%;
   margin-bottom: 50px;
+}
+
+.introduction-text {
+  width: 50%;
 }
 
 .content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.content_text {
-  width: 50%;
-}
-
-.content_text>h1 {
-  font-size: 35px;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-.content_text>h2 {
-  font-size: 35px;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: var(--color-blue);
 }
 
 .content-form {
@@ -221,16 +43,15 @@ li:has(> a.active-link) {
   margin: 5px 25px 0 0;
   background-color: #f3f3f3;
   margin-top: 20px;
-  
 }
 
-input[type="file"] {
+input[type='file'] {
   display: none;
 }
 
 .upload {
   padding: 10px 10px;
-  width:40%;
+  width: 40%;
   background-color: rgb(195, 195, 195);
   cursor: pointer;
 }
@@ -249,14 +70,13 @@ input[type="file"] {
 
 .contato-info .btn {
   cursor: pointer;
-  border: none;
-  width: 20%;
-  color: var(--color-white);
-  background-color: var(--color-blue);
-  border-radius: 15px;
-  padding: 5px 25px;
-  margin-top: 18px;
-  margin-bottom: 20px;
   position: relative;
   left: 80%;
 }
+
+  /* Abaixo de 1000 */
+  @media screen and (max-width: 1000px) {
+    .introduction-text {
+      width: 100%;
+    }
+  }

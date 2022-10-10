@@ -36,7 +36,7 @@ body {
 }
 
 .navbar {
-  margin: 1% 7% 4% 7%;
+  margin: 0.5% 7% 0.5% 7%;
 }
 
 .nav_menu ul {
@@ -62,7 +62,7 @@ li:has(> a.active-link) {
 
 .default-section {
   display: flex;
-  margin: 7%;
+  margin: 2% 7% 2% 7%;
 }
 
 /* UTILS */
@@ -75,6 +75,30 @@ li:has(> a.active-link) {
 .text {
   color: var(--color-black);
   font-size: 1.5rem;
+}
+
+/* SIDE PANEL BUTTONS */
+.side-button {
+  text-align: center;
+  cursor: pointer;
+  margin: 0px 0px 0px -100px;
+  max-width: none;
+  padding: 0;
+  border: 0;
+}
+
+div[vw] {
+  margin-top: -45vh;
+}
+
+.access-button,
+.left-rounded {
+  border-bottom-left-radius: var(--bs-border-radius-pill) !important;
+  border-top-left-radius: var(--bs-border-radius-pill) !important;
+}
+
+.access-button {
+  background-color: #004b99;
 }
 
 /* Acima de 993px */
@@ -126,6 +150,15 @@ li:has(> a.active-link) {
 .contrast article {
   background: #000 !important;
   color: #fff !important;
+}
+
+.contrast .side-button {
+  --bs-bg-opacity: 1;
+  background: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.contrast .side-button span {
+  color: #000 !important;
 }
 
 .contrast section {
