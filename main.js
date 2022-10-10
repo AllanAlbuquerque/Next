@@ -97,6 +97,11 @@ function updateViewContrast() {
 
 function toogleContrast() {
   this.setState(!this.currentState);
+  if(this.currentState) {
+    document.getElementById('logo').src = './img/logo_high_contrast.svg';
+  } else {
+    document.getElementById('logo').src = './img/logo.svg';
+  }
 }
 
 // ZOOM NAS IMAGENS
