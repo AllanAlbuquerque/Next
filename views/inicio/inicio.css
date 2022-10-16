@@ -1,0 +1,65 @@
+.depoimentos-card {
+  background-color: #e9e9e9;
+}
+
+.img-card {
+  width: 100px;
+  height: 100px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.forum-card {
+  width: 25rem;
+  height: 25rem;
+}
+
+.forum-card .text {
+  font-size: 1.2rem;
+}
+
+.testes,
+.forum {
+  margin: 5% 0;
+  padding: 3% 0;
+  background-color: rgb(50, 55, 174, 8%);
+}
+
+.btn-manual {
+  padding: 1rem 2rem;
+  background-color: #e9e9e9;
+  width: 100%;
+  font-weight: 700;
+}
+
+.text-center {
+  font-weight: 700;
+  justify-content: center;
+}
+
+.home-img {
+  width: 100px;
+  height: 100px;
+}
+
+.introduction-text {
+  width: 50%;
+}
+
+.title-platform {
+  font-size: 2rem;
+}
+
+/* Abaixo de 1000 */
+@media screen and (max-width: 1000px) {
+  .cards,
+  .qualitys {
+    flex-wrap: wrap;
+  }
+
+  .introduction-text {
+    width: 100%;
+  }
+}

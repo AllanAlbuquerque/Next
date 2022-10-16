@@ -13,6 +13,11 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="./main.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -25,16 +30,22 @@
     </button>
     <div class="collapse navbar-collapse nav_menu" id="navMenu">
       <ul class="d-flex gap-4">
-        <li class="d-flex justify-content-center p-2 rounded-pill"><a id="homeBtn" class="active-link dyn-font"
-            onclick="navigateTo('./views/inicio/inicio.html', this)">Início</a></li>
-        <li class="d-flex justify-content-center p-2 rounded-pill dyn-font"><a
-            onclick="navigateTo('./views/manual/manual.html', this)">Manual</a></li>
-        <li class="d-flex justify-content-center p-2 rounded-pill dyn-font"><a
-            onclick="navigateTo('./views/teste/teste.html', this)">Teste Online</a></li>
-        <li class="d-flex justify-content-center p-2 rounded-pill dyn-font"><a
-            onclick="navigateTo('./views/certificado/certificado.html', this)">Certificado</a></li>
-        <li class="d-flex justify-content-center p-2 rounded-pill dyn-font"><a
-            onclick="navigateTo('./views/forum/forum.html', this)">Fórum</a></li>
+        <li class="d-flex justify-content-center p-2 rounded-pill">
+          <a id="homeBtn" class="active-link dyn-font"
+            onclick="navigateTo('./views/inicio/inicio.html', this)">Início</a>
+        </li>
+        <li class="d-flex justify-content-center p-2 rounded-pill dyn-font">
+          <a id="manualBtn" onclick="navigateTo('./views/manual/manual.html', this)">Manual</a>
+        </li>
+        <li class="d-flex justify-content-center p-2 rounded-pill dyn-font">
+          <a id="testeBtn" onclick="navigateTo('./views/teste/teste.html', this)">Teste Online</a>
+        </li>
+        <li class="d-flex justify-content-center p-2 rounded-pill dyn-font">
+          <a id="certifBtn" onclick="navigateTo('./views/certificado/certificado.html', this)">Certificado</a>
+        </li>
+        <li class="d-flex justify-content-center p-2 rounded-pill dyn-font">
+          <a id="forumBtn" onclick="navigateTo('./views/forum/forum.html', this)">Fórum</a>
+        </li>
       </ul>
     </div>
   </nav>
@@ -54,7 +65,7 @@
 
   <div vw class="enabled">
     <div class="side-button left-rounded mb-1 p-1 bg-light contraste" accesskey="1" onclick="increaseFont()">
-      <span class="fs-5 fw-bold">A+</span> 
+      <span class="fs-5 fw-bold">A+</span>
     </div>
     <div class="side-button left-rounded mb-1 p-1 bg-light contraste" accesskey="2" onclick="decreaseFont()">
       <span class="fs-5 fw-bold">A-</span>

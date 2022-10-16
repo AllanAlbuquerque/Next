@@ -1,7 +1,8 @@
 <section class="default-section align-items-center">
   <div class="introduction-text">
     <h1 class="title dyn-font">A ACESSIBILIDADE NA <span class="text-degrade">WEB</span> É UM DIREITO PARA TODOS</h1>
-    <p class="text dyn-font">É essencial que desenvolvedores e organizações incluam a acessibilidade em seus sites e ferramentas
+    <p class="text dyn-font">É essencial que desenvolvedores e organizações incluam a acessibilidade em seus sites e
+      ferramentas
       na web.
       Aprenda aqui como tornar seu código mais acessível além de testar se ele está dentro dos padrões da W3C.</p>
   </div>
@@ -11,24 +12,160 @@
 </section>
 
 <section class="default-section align-items-center justify-content-center flex-column">
-    <h1 class="title text-degrade title-platform dyn-font">A plataforma feita para desenvolvedores!</h1>
-    <p class="text dyn-font">Aqui você tem informações sobre acessibilidade web, códigos prontos, testes online da sua plataforma, fórum para conversar com outros desenvolvedores  e tirar dúvidas, e, por fim, possibilidade de obter um certificado <span class="fw-bold">Accessibility.</span></p>
+  <h1 class="title text-degrade title-platform dyn-font">A plataforma feita para desenvolvedores!</h1>
+  <p class="text dyn-font">Aqui você tem informações sobre acessibilidade web, códigos prontos, testes online da sua
+    plataforma, fórum para conversar com outros desenvolvedores e tirar dúvidas, e, por fim, possibilidade de obter um
+    certificado <span class="fw-bold">Accessibility.</span></p>
 
+  <div class="qualitys d-flex align-items-center">
+    <div class="d-flex flex-column align-items-center justify-content-center">
+      <img class="home-img" src="./img/home/clock.svg" alt="Relógio">
+      <p class="text text-center">Economize tempo</p>
+    </div>
+    <div class="d-flex flex-column align-items-center justify-content-center">
+      <img class="home-img" src="./img/home/device.svg" alt="Dispositivos">
+      <p class="text text-center">Acesse em qualquer dispositivo</p>
+    </div>
+    <div class="d-flex flex-column align-items-center justify-content-center">
+      <img class="home-img" src="./img/home/acessibility.svg" alt="Acessibilidade">
+      <p class="text text-center">Inclusão para todos</p>
+    </div>
+    <div class="d-flex flex-column align-items-center justify-content-center">
+      <img class="home-img" src="./img/home/speak.svg" alt="Converse">
+      <p class="text text-center">Compartilhe com outros devs</p>
+    </div>
+    <div class="d-flex flex-column align-items-center justify-content-center">
+      <img class="home-img" src="./img/home/checkList.svg" alt="Teste">
+      <p class="text text-center">Teste o seu código</p>
+    </div>
+    <div class="d-flex flex-column align-items-center justify-content-center">
+      <img class="home-img" src="./img/home/stamp.svg" alt="Certificado">
+      <p class="text text-center">Certificado pós avaliação</p>
+    </div>
+  </div>
 </section>
 
-<style>
-  .introduction-text {
-    width: 50%;
-  }
+<section class="default-section align-items-center justify-content-center flex-column gap-3">
+  <h1 class="title text-degrade title-platform dyn-font">Manual da acessibilidade</h1>
+  <button class="btn btn-manual shadow-lg text rounded-pill d-flex align-items-center justify-content-between"
+    type="button">
+    <span class="text">Como implementar a principal acessibilidade em meu site?</span>
+    <i class="fa-solid fa-chevron-right"></i>
+  </button>
+  <button class="btn btn-manual shadow-lg text rounded-pill d-flex align-items-center justify-content-between"
+    type="button">
+    <span class="text">Aprenda sobre o daltonismo e como ele influencia na montagem do design de um site!</span>
+    <i class="fa-solid fa-chevron-right"></i>
+  </button>
+  <button class="btn btn-manual shadow-lg text rounded-pill d-flex align-items-center justify-content-between"
+    type="button">
+    <span class="text">O que a W3C diz sobre a acessibilidade na web?</span>
+    <i class="fa-solid fa-chevron-right"></i>
+  </button>
+  <button class="btn btn-manual shadow-lg text rounded-pill d-flex align-items-center justify-content-between"
+    type="button">
+    <span class="text">Quais cores usar na montagem de um site inclusivo e acessivo?</span>
+    <i class="fa-solid fa-chevron-right"></i>
+  </button>
+  <button id="verManual" class="btn bg-blue rounded-pill my-2 px-4" type="submit">Ver mais</button>
+</section>
 
-  .title-platform {
-    font-size: 2rem;
-  }	
+<section class="testes d-flex align-items-center justify-content-center flex-column gap-4">
+  <h1 class="title text-degrade title-platform dyn-font">Teste online</h1>
+  <div class="d-flex align-items-center justify-content-center flex-wrap">
+    <span class="text w-75 w-md-100 dyn-font">
+      Seu site, plataforma e/ou ferramenta web está dentro dos padrões e normas da acessibilidade na Web da W3C? Acesse
+      o nosso formulário, preencha as informações corretamente que faremos a avaliação e encaminharemos o resultado para
+      o seu e-mail!
+    </span>
+    <img class="home-img m-1" src="./img/home/w3c.svg" alt="Logo W3C">
+  </div>
+  <button id="verForm" class="btn bg-blue rounded-pill my-2 px-4" type="submit">Acesse o formulário aqui</button>
+</section>
 
-  /* Abaixo de 1000 */
-  @media screen and (max-width: 1000px) {
-    .introduction-text {
-      width: 100%;
-    }
-  }
-</style>
+<section class="default-section align-items-center justify-content-center flex-column gap-3">
+  <h1 class="title text-degrade title-platform dyn-font">Certificado Hefesto</h1>
+  <p class="text dyn-font">Obtenha um certificado que comprove que o seu site está dentro dos parâmetros de
+    acessibilidade e inclusão para todo e qualquer público!</p>
+  <div class="d-flex align-items-center justify-content-center">
+    <img class="img-fluid d-md-block d-none" src="./img/home/certificado-home.svg" alt="Certificado">
+    <img class="img-fluid" src="./img/selo.svg" alt="Selo">
+  </div>
+</section>
+
+<section class="forum d-flex align-items-center justify-content-center flex-column gap-4">
+  <h1 class="title text-degrade title-platform dyn-font">Fórum</h1>
+
+  <div class="d-flex align-items-center justify-content-center flex-wrap">
+    <p class="text w-75 w-md-100 dyn-font">
+      Converse com outros desenvolvedores, compartilhe ideias, códigos e/ou tire suas dúvidas através do nosso fórum!
+    </p>
+    <div class="cards d-flex align-items-center justify-content-center gap-4">
+      <div class="forum-card d-flex justify-content-center flex-column bg-light shadow p-2">
+        <header class="d-flex align-items-center ms-4 mt-4 gap-4">
+          <img class="img-card" src="./img/forum/profile-1.svg" alt="Usuário">
+          <div class="d-flex flex-column gap-1 lh-1">
+            <span class="text bold">Leonardo S.</span>
+            <span class="text text-muted">1h atrás</span>
+          </div>
+        </header>
+
+        <p class="text bold ms-4 mt-5">Personalizando o VLibras</p>
+        <p class="text ms-4">
+          Opa, beleza pessoal? Vim trazer uma opção pra vocês devs poderem personalizar o VLibras da
+          forma que quiserem, é bem fácil, então vamos lá... <span type="button"
+            class="text-degrade bold cursor-pointer">Ver mais</span>
+        </p>
+      </div>
+      <div class="forum-card d-flex justify-content-center flex-column bg-light shadow p-2">
+        <header class="d-flex align-items-center ms-4 mt-4 gap-4">
+          <img class="img-card" src="./img/forum/profile-2.svg" alt="Usuário">
+          <div class="d-flex flex-column gap-1 lh-1">
+            <span class="text bold">Fábia L.</span>
+            <span class="text text-muted">3h atrás</span>
+          </div>
+        </header>
+
+        <p class="text bold ms-4 mt-5">Como faço para colocar a API?</p>
+        <p class="text ms-4">
+          Oi gente, ainda fiquei em dúvida sobre como colocar uma API, é bem complicado haahahaha, alguém poderia me
+          ajudar?... <span type="button" class="text-degrade bold cursor-pointer">Ver mais</span>
+        </p>
+      </div>
+      <div class="forum-card d-flex justify-content-center flex-column bg-light shadow p-2">
+        <header class="d-flex align-items-center ms-4 mt-4 gap-4">
+          <img class="img-card" src="./img/forum/profile-3.svg" alt="Usuário">
+          <div class="d-flex flex-column gap-1 lh-1">
+            <span class="text bold">Cléber T.</span>
+            <span class="text text-muted">1h atrás</span>
+          </div>
+        </header>
+
+        <p class="text bold ms-4 mt-5">Criei uma nova API de leitor!</p>
+        <p class="text ms-4">
+          Eai galera, vim compartilhar com essa comunidade incrível uma nova API que criei de leitor de tela e espero
+          que gostem! Aceito sugestões... <span type="button" class="text-degrade bold cursor-pointer">Ver mais</span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <button id="verForum" class="btn bg-blue rounded-pill my-2 px-4" type="submit">Acesse nosso fórum!</button>
+</section>
+
+<section class="depoimentos default-section align-items-center justify-content-center flex-column gap-3">
+  <h1 class="title text-degrade title-platform dyn-font">Ainda em dúvida?</h1>
+  <p class="text dyn-font">Confira depoimentos de usuários que implementaram a Hefesto em sua plataforma</p>
+  <div class="depoimentos-card rounded d-flex align-items-center shadow p-4 lh-sm">
+    <img src="./img/depoimentos/profile-1.svg" alt="Perfil 1">
+    <div class="d-flex flex-column m-4">
+      <p class="text dyn-font bold">Michelle Moris</p>
+      <p class="text dyn-font">CEO da Tech-U</p>
+      <p class="text dyn-font">Essa plataforma foi um dos melhores achados que já tive para saber mais da acessibilidade
+        no desenvolvimento. Meus colaboradores tinham muitos problemas para implementar elementos acessíveis no site da
+        empresa porque não há muitos lugares que você pode obter informações claras, com códigos já prontos... mas, esse
+        site sem dúvidas salvou a minha equipe! Muito obrigada.</p>
+    </div>
+  </div>
+</section>
+
+<link rel="stylesheet" type="text/css" href="./views/inicio/inicio.css" />

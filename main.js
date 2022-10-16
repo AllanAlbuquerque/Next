@@ -16,7 +16,7 @@ async function navigateTo(route, button) {
   content.innerHTML = html;
 
   const jsModule = await import(`${route.replace('html', 'js')}`);
-  jsModule.init();
+  jsModule.init(navigateTo);
 }
 
 navigateTo('./views/inicio/inicio.html');
