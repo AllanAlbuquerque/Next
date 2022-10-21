@@ -1,0 +1,88 @@
+<article class="text dyn-font">
+  <p class="bolder">Deficiências visuais</p>
+  <p>
+    A deficiência visual é a perda ou a redução da capacidade visual em ambos os olhos em caráter definitivo.
+    Pessoas com algum tipo de deficiência do tipo visual, tem dificuldades ao acessar websites se, não implementados de
+    uma forma acessível.
+  </p>
+  <p>
+    Temos diversas áreas em um site que precisam ser melhoradas para obter a acessibilidade WEB para deficientes
+    visuais.
+    Separamos em tópicos (de acordo com a W3C) para ser mais fácil para você, desenvolvedor, conseguir tornar sua web
+    mais inclusiva! Segue o fio abaixo:
+  </p>
+  <span class="text-degrade bolder">CORES:</span>
+  <p>
+    Os cuidados com cores são importantíssimos no desenvolvimento de páginas web. O WCAG 2.0 (Web Content Accessibility
+    Guidelines) é bem direto com relação a isso: A cor não deve ser utilizada como o único meio visual de transmitir
+    informações. Isso significa que você não deve utilizar indicações como “clique no botão verde para continuar” ou,
+    “campos marcados em vermelho são obrigatórios”. Por isso mesmo, o E-Mag, modelo de acessibilidade do Governo
+    Eletrônico diz que o mínimo de contraste entre o plano de fundo e o primeiro plano deve ser de 3 para 1. Se você tem
+    dúvidas, na última página do E-Mag existe uma tabela de cores que faz o contraste adequado com preto e branco (já em
+    hexadecimal). No WCAG 2.0, esse valor é de 4,5 para 1.
+  </p>
+  <ul>
+    <li>Contraste mínimo de 4:5:1</li>
+    <li>Contraste em diversos fundos e não apenas no branco</li>
+    <li>Usar legendas diretamente sobre a imagem, gráficos e símbolos ou texturas, linhas e traços diversos.</li>
+    <li>Manter todos os links com a mesma cor e seguir sempre um mesmo padrão para os títulos e elementos textuais.</li>
+    <li>Distinção entre verde e vermelho é bem difícil para um daltônico</li>
+    <li>Utilize ícones, texto e até mesmo textura para deixar uma informação clara. </li>
+    <li>Mais brilho, mais saturação, mais matiz, mais tudo!</li>
+  </ul>
+  <img src="./views/manual/topicos/img/cores.svg" class="img-fluid mx-auto" alt="Exemplo de cores">
+  <br>
+  <br>
+  <p>Site para usar na análise do contraste:</p>
+  <p><a
+      href="https://snook.ca/technical/colour_contrast/colour.html#fg=33FF33,bg=333333">https://snook.ca/technical/colour_contrast/colour.html#fg=33FF33,bg=333333</a>
+  </p>
+  <br>
+  <p>Site de sistema de identificação para daltônicos:</p>
+  <p><a href="https://www.coloradd.net/en/">https://www.coloradd.net/en/</a></p>
+  <br>
+  <span class="text-degrade bolder">CONTEÚDO DO SITE:</span>
+  <ul>
+    <li>
+      Prover alternativas, tais como transcrições em texto acessível para conteúdo de áudio, como os podcasts;
+    </li>
+    <li>
+      Prover recursos como audiodescrição e legendagem para arquivos de vídeo.
+    </li>
+    <li>
+      Estrutura: o HTML estrutura a informação, dando significado (semântica) aos elementos presentes;
+    </li>
+    <li>
+      Aparência: cores, tamanho, diagramação e posicionamento dos elementos são dados pelas folhas de estilo (CSS);
+    </li>
+    <li>
+      Comportamento: alguns elementos do HTML são interativos, por exemplo o link. Mas a interação prevista para além do
+      que está contido nos elementos HTML, chamada comportamento, pode ser obtida por meio de linguagem de programação,
+      como o Javascript.
+    </li>
+    <li>
+      Boa organização estrutural e semântica do HTML
+    </li>
+    <li>
+      Não inclua conteúdo que pisca em taxas e padrões específicos
+    </li>
+    <li>
+      Fornecer mecanismos para desligar as animações, a menos que sejam essenciais
+    </li>
+    <li>
+      Ferramenta de lupa e zoom
+    </li>
+  </ul>
+  <br>
+  <p>API da Lupa:</p>
+  <p><a
+      href="https://learn.microsoft.com/pt-br/windows/win32/winauto/magapi/magapi-intro">https://learn.microsoft.com/pt-br/windows/win32/winauto/magapi/magapi-intro</a>
+  </p>
+  <br>
+  <p>Código para Zoom das letras:</p>
+  <p><a href="https://codepen.io/omarjadalla/pen/NvqgoN">https://codepen.io/omarjadalla/pen/NvqgoN</a></p>
+  <br>
+  <p>Referências:</p>
+  <p><a href="https://www.w3.org/TR/AERT#color-contrast">https://www.w3.org/TR/AERT#color-contrast</a></p>
+  <p><a href="https://www.w3.org/Translations/WCAG20-pt-br/">https://www.w3.org/Translations/WCAG20-pt-br/</a></p>
+</article>
