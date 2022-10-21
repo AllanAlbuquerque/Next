@@ -1,6 +1,7 @@
 <section class="default-section align-items-center justify-content-center">
     <div class="introduction-text">
-        <h1 class="title dyn-font">OBTENHA SEU CERTIFICADO <br> <span class="text-degrade">ACESSIBILIDADE WEB</span></h1>
+        <h1 class="title dyn-font">OBTENHA SEU CERTIFICADO <br> <span class="text-degrade">ACESSIBILIDADE WEB</span>
+        </h1>
         <p class="text dyn-font">
             Obtenha um certificado que comprove que o seu site está dentro dos
             parâmetros de acessibilidade e inclusão
@@ -62,9 +63,42 @@
             <label class="mb-5">Insira o número da credencial aqui:</label>
 
             <input placeholder="Ex: NXE38EKDA">
-            <button class="mt-5">Gerar certificado</button>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#myModal" class="mt-5" id="myInput">Gerar
+                certificado</button>
         </div>
-    </div>
+
+        <!-- Modal -->
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header d-flex flex-row-reverse m-3">
+                        <a type="button" data-bs-dismiss="modal" aria-label="Close">
+                            <img src="/img/closemodel.svg" alt="" srcset="">
+                        </a>
+                    </div>
+                    <h5 class="modal-title text-center mb-5" id="exampleModalLongTitle">Certificado gerado com sucesso!</h5>
+                    <div class="modal-body d-flex justify-content-around mb-5">
+                        <div class="text-center d-flex flex-column align-items-center">
+                            <img class="mb-5" src="/img/certiModel.svg" alt="" srcset="">
+                            <button  type="button" class="btn btn-secondary" data-dismiss="modal">Baixar certificado</button>
+                        </div>
+                        <div class="text-center d-flex flex-column align-items-center justify-content-center">
+                            <img class="mb-5" src="/img/medalhaModel.svg" alt="">
+                            <button type="button" class="btn btn-primary mt-5">Baixar selo</button> 
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer mb-5">
+                        <p class="text-center w-100">Compartilhe nas redes sociais!</p>
+                        <img class="m-auto" src="/img/network.svg" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
 </section>
 

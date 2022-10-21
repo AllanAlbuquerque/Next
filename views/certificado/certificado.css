@@ -110,7 +110,51 @@
   top: 100px;
 }
 
+.modal {
+  --bs-modal-width: 1266px;
+  --bs-modal-header-border-color: none;
+  --bs-modal-footer-border-width: none;
+}
+
+.modal-content {
+  border-radius: 20px;
+  border: 20px solid var(--color-blue);
+}
+
+.btn-close {
+  background: url("/img/closemodel.svg");
+  background-repeat: no-repeat;
+  width: 3.5em;
+  height: 3.5em;
+}
+
+#exampleModalLongTitle {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 41px;
+  background: linear-gradient(90deg, rgba(50, 55, 174, 0.9) 0.06%, rgba(23, 26, 108, 0.94) 100.06%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.modal-footer{
+  font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 26px;
+line-height: 140.6%;
+/* identical to box height, or 37px */
+
+text-align: center;
+
+color: #000000;
+}
+
 @media only screen and (max-width: 988px) {
+
   .content-certificado,
   .describ,
   .top {
@@ -128,6 +172,7 @@
   .bilhete img {
     left: 300px;
   }
+
   /* Abaixo de 1000 */
   .introduction-text {
     width: 100%;
