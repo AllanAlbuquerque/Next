@@ -57,11 +57,11 @@ body {
 }
 
 li:has(> a.active-link) {
-  background-color: #3c3c3c;
+  background-color: #3c3c3c !important;
 }
 
 .nav_menu .active-link {
-  color: var(--color-white);
+  color: var(--color-white) !important;
 }
 
 .default-section {
@@ -156,6 +156,18 @@ div[vw] {
   color: #fff !important;
 }
 
+.contrast .btn-manual {
+  background: #3c3c3c !important;
+  color: #fff !important;
+}
+.contrast .home-img {
+  filter: brightness(0) invert(1);
+}
+
+.contrast .nav_menu a {
+  color: var(--color-white);
+}
+
 .contrast .side-button {
   --bs-bg-opacity: 1;
   background: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
@@ -169,7 +181,7 @@ div[vw] {
   border: 1px solid #fff;
 }
 
-.contrast {
+.default-section {
   padding: 1rem;
 }
 
