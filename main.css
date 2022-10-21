@@ -44,6 +44,10 @@ body {
   margin: 0;
 }
 
+.bolder {
+  font-weight: 700;
+}
+
 .nav_menu a {
   white-space: nowrap;
   margin: 0 1rem 0 1rem;
