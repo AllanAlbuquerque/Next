@@ -11,7 +11,7 @@
     </div>
 </section>
 
-<section class="exibiOrdem mx-auto">
+<section class="exibiOrdem mx-auto d-none d-lg-block d-xl-block d-xxl-block">
     <div class=" d-flex my-5 px-3 py-3  float-right">
         <img class="me-2" src="../../img/Back.png" alt="" srcset="">
         <p>Mais recente para mais antiga </p>
@@ -20,43 +20,45 @@
 
 <section
     class="content-certificado mb-5 mx-auto d-flex flex-lg-row  flex-xl-row flex-md-column flex-sm-column  flex-xs-column  flex-column justify-content-between ">
-    <div class="perfil p-5">
+    <div class="perfil  p-5">
         <div class="phone h-auto text-center">
             <img class="mb-3" src="../../img/perfil.svg" alt="perfil" srcset="">
-            <h2 class="title mb-5">Fazer login</h2>
+            <h2 class="title mb-5 seeMore">Fazer login</h2>
         </div>
-        <p>
-            <img src="../../img/Chatbubbleoutline.png" alt="" srcset=""> Ver todas as discussões
-        </p>
+        <div class="mb-5">
+            <p>
+                <img src="../../img/Chatbubbleoutline.png" alt="" srcset=""> Ver todas as discussões
+            </p>
 
-        <p>
-            <img src="../../img/Staroutline.png" alt="" srcset=""> Favoritos
-        </p>
+            <p>
+                <img src="../../img/Staroutline.png" alt="" srcset=""> Favoritos
+            </p>
+        </div>
 
         <ul class="filtrar" type="none">
 
             <label class="mb-3">Filtrar:</label>
-            <li>
+            <li class="mb-3">
                 <input type="checkbox" id="scales" name="scales" checked>
                 <label for="scales">Últimas 24 horas</label>
             </li>
 
-            <li>
+            <li class="mb-3">
                 <input type="checkbox" id="horns" name="horns">
                 <label for="horns">Somente usuários verificados</label>
             </li>
 
-            <li>
+            <li class="mb-3">
                 <input type="checkbox" id="horns" name="horns">
                 <label for="horns">Códigos prontos</label>
             </li>
 
-            <li>
+            <li class="mb-3">
                 <input type="checkbox" id="horns" name="horns">
                 <label for="horns">Normas e padrões</label>
             </li>
 
-            <li>
+            <li class="mb-3">
                 <input type="checkbox" id="horns" name="horns">
                 <label for="horns">Criações de usuários</label>
             </li>
@@ -64,42 +66,47 @@
         </ul>
     </div>
 
+    <section class="exibiOrdem mx-auto d-block d-lg-none d-xl-none d-xxl-none">
+        <div class=" d-flex my-5 px-3 py-3  float-right">
+            <img class="me-2" src="../../img/Back.png" alt="" srcset="">
+            <p>Mais recente para mais antiga </p>
+        </div>
+    </section>
+
     <div class="describ p-5">
         <div class="comment mb-5 border_bottom">
             <div class="d-flex flex-row mb-4">
-                <img class="me-4" src="../../img/perfil.svg" alt="" srcset="">
+                <img class="me-4" src="../../img/perfil01.svg" alt="" srcset="">
                 <span>
-                    <h3>Leonardo S.</h3>
+                    <h3 class="fw-bold fw-bold">Leonardo S.</h3>
                     <p>1h atrás</p>
                 </span>
             </div>
-            <h4 class="mb-4">Personalizando o VLibras</h4>
+            <h4 class="mb-4 fw-bold">Personalizando o VLibras</h4>
             <p>Opa, beleza pessoal? Vim trazer uma opção pra vocês devs poderem personalizar o VLibras da forma que
-                quiserem, é bem fácil, então vamos lá... Ver mais </p>
+                quiserem, é bem fácil, então vamos lá... <span class="seeMore">Ver mais</span>  </p>
         </div>
         <div class="comment mb-5 border_bottom">
             <div class="d-flex flex-row mb-4">
-                <img class="me-4" src="../../img/perfil.svg" alt="" srcset="">
+                <img class="me-4" src="../../img/perfil02.svg" alt="" srcset="">
                 <span>
-                    <h3>Leonardo S.</h3>
-                    <p>1h atrás</p>
+                    <h3 class="fw-bold">Fábia L.</h3>
+                    <p>3h atrás</p>
                 </span>
             </div>
-            <h4 class="mb-4">Personalizando o VLibras</h4>
-            <p>Opa, beleza pessoal? Vim trazer uma opção pra vocês devs poderem personalizar o VLibras da forma que
-                quiserem, é bem fácil, então vamos lá... Ver mais </p>
+            <h4 class="mb-4 fw-bold">Como faço para colocar a API?</h4>
+            <p>Oi gente, ainda fiquei em dúvida sobre como colocar uma API, é bem complicado haahahaha, alguém poderia me ajudar? <span class="seeMore">Ver mais</span>   </p>
         </div>
         <div class="comment mb-5">
             <div class="d-flex flex-row mb-4">
-                <img class="me-4" src="../../img/perfil.svg" alt="" srcset="">
+                <img class="me-4" src="../../img/perfil03.svg" alt="" srcset="">
                 <span>
-                    <h3>Leonardo S.</h3>
-                    <p>1h atrás</p>
+                    <h3 class="fw-bold">Cléber T.</h3>
+                    <p>5h atrás</p>
                 </span>
             </div>
-            <h4 class="mb-4">Personalizando o VLibras</h4>
-            <p>Opa, beleza pessoal? Vim trazer uma opção pra vocês devs poderem personalizar o VLibras da forma que
-                quiserem, é bem fácil, então vamos lá... Ver mais </p>
+            <h4 class="mb-4 fw-bold">Criei uma nova API de leitor!</h4>
+            <p>Eai galera, vim compartilhar com essa comunidade incrível uma nova API que criei de leitor de tela e espero que gostem! Aceito sugestões..  <span class="seeMore"> Ver mais </span>  </p>
         </div>
 
         <div class="text-center">

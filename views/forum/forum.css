@@ -20,7 +20,7 @@
   max-width: 100%;
   background: rgba(246, 246, 246, 0.9);
   box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.15);
-  height: 1000px;
+  height: 1050px;
 }
 
 .perfil .phone img {
@@ -161,8 +161,31 @@
   bottom: -10px;
 }
 
+.seeMore {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 32px;
+
+  /* cor azul */
+
+  color: #3237AE;
+}
+
 @media only screen and (max-width: 988px) {
   .introduction-text {
     width: 100%;
+  }
+
+  .comment {
+    height: auto;
+  }
+}
+
+
+@media only screen and (max-width: 470px) {
+  .perfil {
+    height: auto;
   }
 }
