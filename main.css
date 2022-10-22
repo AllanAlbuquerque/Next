@@ -17,6 +17,11 @@ body {
   --color-black: #000000;
 }
 
+.nav_logo {
+  max-width: 220px;
+  max-height: 62;
+}
+
 .bg-blue {
   color: var(--color-white);
   background: linear-gradient(180deg, rgba(50, 54, 174, 0.88) 0%, rgba(23, 26, 108, 0.9) 100%);
@@ -152,7 +157,7 @@ div[vw] {
 .contrast main,
 .contrast aside,
 .contrast article {
-  background: #000 !important;
+  background: #080707 !important;
   color: #fff !important;
 }
 
@@ -174,15 +179,7 @@ div[vw] {
 }
 
 .contrast .side-button span {
-  color: #000 !important;
-}
-
-.contrast section {
-  border: 1px solid #fff;
-}
-
-.default-section {
-  padding: 1rem;
+  color: #080707 !important;
 }
 
 .contrast h1,
@@ -205,7 +202,7 @@ div[vw] {
 }
 
 .contrast .text-degrade {
-  background: -webkit-linear-gradient(90deg, var(--color-yellow) 0%, var(--color-brown) 100%);
+  background: -webkit-linear-gradient(90deg, #fff 0%, var(--color-yellow) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
